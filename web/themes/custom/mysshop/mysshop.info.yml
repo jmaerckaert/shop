@@ -1,0 +1,33 @@
+name: MySShop
+description: MySShop is a derivated of SShop theme.
+type: theme
+core: 8.x
+base theme: sshop
+
+# Libraries override.
+libraries-override:
+  sshop/smartmenus:
+    js:
+      /libraries/smartmenus/jquery.smartmenus.js: /libraries/smartmenus/dist/jquery.smartmenus.js
+  sshop/smartmenus-bootstrap-addon:
+    css:
+      theme:
+        /libraries/smartmenus/addons/bootstrap/jquery.smartmenus.bootstrap.css: /libraries/smartmenus/dist/addons/bootstrap/jquery.smartmenus.bootstrap.css
+    js:
+      /libraries/smartmenus/addons/bootstrap/jquery.smartmenus.bootstrap.js: /libraries/smartmenus/dist/addons/bootstrap/jquery.smartmenus.bootstrap.js
+
+# Regions.
+regions:
+  navigation: 'Navigation'
+  navigation_collapsible: 'Navigation (Collapsible)'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  header: 'Header'
+  content: 'Content'
+  sidebar_first: 'Left Sidebar'
+  sidebar_second: 'Right Sidebar'
+  footer_first: 'Footer First Widget'
+  footer_second: 'Footer Second Widget'
+  footer_third: 'Footer Third Widget'
+  footer_fourth: 'Footer Fourth Widget'
+  footer: 'Footer Bottom'
